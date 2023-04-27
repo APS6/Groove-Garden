@@ -1,0 +1,708 @@
+*::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    --bg: #202020;
+    --blk: #0f0c0c;
+    --prpl: #6E30F1;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: white;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.navbar {
+    background-color: var(--bg);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    height: 10vh;
+}
+
+nav {
+    transition: all .5s;
+}
+
+.brand {
+    font-size: 3ch;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.navlinks {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    font-size: 2.1ch;
+}
+
+.navlinks li a {
+    color: white;
+}
+.navlinks li a:hover {
+    color: rgb(184, 173, 173)
+}
+.burger {
+    display: none;
+}
+
+.line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 5px;
+    transition: all .5s;
+}
+
+.act {
+    color: rgb(219, 219, 219) !important;
+}
+
+.btn-1 {
+    background-color: #6E30F1;
+    padding: 8px 14px;
+    border-radius: 100px;
+    border: 0px;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5ch;
+}
+.btn-1:hover{
+    background-color: #5020b9;
+}
+.bg {
+    background-color: var(--bg);
+}
+
+#home {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+    /* background-color: #6E30F1; */
+    max-width: 1000px;
+}
+
+.heroleft {
+    position: relative;
+    z-index: 500;
+    /* background-color: #6E30F1; */
+}
+
+.heroleft::before {
+    content: '';
+    position: absolute;
+    left: 10%;
+    top: 20%;
+    right: 10%;
+    bottom: 0%;
+    background: radial-gradient(circle at center, #9734e275, rgba(155, 35, 235, 0.007));
+    z-index: -1;
+    border-radius: 1000px;
+    filter: blur(50px);
+}
+
+.heroright {}
+
+h1 {
+    font-size: 10ch;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+
+.mar {
+    margin-left: 100px;
+}
+
+#arrow {
+    position: absolute;
+    right: 30px;
+    bottom: 30px;
+    font-size: 5ch;
+}
+
+#about {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.aboutcont {
+    display: flex;
+}
+
+.abimg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-80px);
+    opacity: 0;
+}
+
+
+.abimg img {
+    width: 400px;
+    border-radius: 15px;
+    box-shadow: rgba(169, 46, 240, 0.4) 5px 5px, rgba(169, 46, 240, 0.3) 10px 10px, rgba(169, 46, 240, 0.2) 15px 15px, rgba(169, 46, 240, 0.1) 20px 20px, rgba(169, 46, 240, 0.05) 25px 25px;
+}
+
+.abouttext {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 50px;
+}
+
+h2 {
+    font-family: 'McLaren', cursive;
+    font-size: 5ch;
+    font-weight: 300;
+}
+
+.abouttext h2 {
+
+    width: 60%;
+
+}
+
+button{
+    cursor: pointer;
+}
+.btn-2 {
+    align-self: flex-start;
+    border-radius: 10px;
+    padding: 15px 30px;
+    border: 0px;
+    font-weight: 700;
+    font-size: 2.2ch;
+    font-family: 'Oxygen', sans-serif;
+    margin-top: 2rem;
+    transition: all .5s ease;
+}
+
+.btn-2:hover {
+    background-color: #626267;
+    scale:.94 !important;
+    color: #fff;
+}
+
+p {
+    font-size: 2ch;
+    line-height: 25px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.abouttxt {
+    line-height: 50px;
+    width: 60%;
+}
+
+.bigtext {
+    position: absolute;
+    font-size: 25ch;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+    opacity: 0.1;
+    z-index: -1;
+
+}
+
+.bigtext-a {
+    left: -50px;
+    top: 0;
+    opacity: 0;
+
+}
+
+#songs {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.songcont {
+    display: flex;
+}
+
+
+.songimg {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.songtext {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 0 50px;
+    scale: .5;
+    transform: translateX(80px);
+    opacity: 0;
+}
+
+.songtext h2 {
+    width: 65%;
+}
+
+.songtxt {
+    width: 65%;
+}
+
+#disc {
+    position: relative;
+    height: 400px;
+    aspect-ratio: 1/1;
+    z-index: 2;
+    opacity: 0;
+    transform: translateX(100px);
+}
+
+#micro {
+    aspect-ratio: 1/1;
+    width: 350px;
+    position: absolute;
+    z-index: 5;
+    border-radius: 30px;
+    transform: translateX(-100px) rotate(-50deg);
+    opacity: 0;
+
+}
+
+.bigtext-s {
+    right: -50px;
+    top: 0;
+    opacity: 0;
+}
+
+footer {
+    background-color: #191919;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 2rem 0;
+}
+
+footer span {
+    font-size: 3ch;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.tgg {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+.img-1 {
+    margin-right: -30px;
+    margin-left: 100px;
+    width: 700px;
+}
+
+.tgg-ct {
+    z-index: 5;
+    margin-right: 100px;
+    width: 90%;
+}
+
+.bigtext-b {
+    top: 10%;
+    right: -30px;
+}
+
+.story {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 150vh;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+    padding-top: 0rem;
+}
+
+.storyp1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.img-2 {
+    width: 550px;
+    margin-left: 50px;
+    z-index: 3;
+}
+
+.img-3 {
+    width: 500px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 500px;
+    margin-top: -50px;
+    z-index: 2;
+}
+
+.storyp2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.storyp1 p {
+    width: 30%;
+}
+
+.bigtext-os {
+    top: 0;
+}
+
+.team {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    gap: 5rem;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+}
+
+.team h2 {
+    margin-left: 250px;
+}
+
+.cards {
+    align-self: center;
+    display: flex;
+    gap: 5rem;
+}
+
+.card {
+    width: 15rem;
+    height: 10rem;
+    background-color: #39383E;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    border-radius: 100px;
+    margin-top: -50px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3ch;
+}
+
+.card span {
+    margin-top: 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bigtext-tb {
+    top: 0;
+    right: -69px;
+}
+
+.songs-sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 240vh;
+    isolation: isolate;
+    overflow: hidden;
+    position: relative;
+}
+
+.songlist {
+    padding-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.s {
+    display: flex;
+    width: 80%;
+    gap: 2rem;
+}
+
+.s img {
+    width: 300px;
+    height: 300px;
+}
+
+.sc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.s span {
+    font-size: 3ch;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h4 {
+    font-size: 5ch;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.bigtext-so {
+    top: 5%;
+}
+
+.icons {
+    font-size: 3ch;
+    display: flex;
+    gap: 30px;
+}
+.icons i:hover{
+    color: #b8b8bb;
+}
+
+@media (max-width:960px) {
+    .hero {
+        gap: 3rem;
+    }
+
+    .heroleft {
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 8ch;
+    }
+
+    .abimg img {
+        width: 320px;
+    }
+
+    .abouttext {
+        padding: 0;
+    }
+
+    .abouttext h2 {
+        width: 75%;
+    }
+
+    .abouttxt {
+        width: 75%;
+    }
+
+    #disc {
+        height: 320px;
+    }
+
+    #micro {
+        width: 270px;
+    }
+
+    .songtext {
+        padding: 0;
+    }
+
+    .songtext h2 {
+        width: 80%;
+    }
+
+    .songtxt {
+        width: 80%;
+    }
+
+    .bigtext {
+        font-size: 20ch;
+    }
+}
+
+@media (max-width:650px) {
+    .burger {
+        display: block;
+    }
+
+    nav {
+        position: absolute;
+        right: 0;
+        top: 10vh;
+        height: 100vh;
+        background-color: var(--bg);
+        width: 50vw;
+        transform: translateX(100%);
+    }
+
+    .navlinks {
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+        gap: 5rem;
+    }
+
+    .burger.active .line:nth-child(2) {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    .burger.active .line:nth-child(1) {
+        transform: translateY(8px) rotate(46deg);
+    }
+
+    .burger.active .line:nth-child(3) {
+        transform: translateY(-8px) rotate(-46deg);
+    }
+
+    nav.active {
+        transform: translateX(0);
+    }
+
+    .hero {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 6ch;
+    }
+
+    #about {
+        padding-bottom: 3rem;
+    }
+
+    .aboutcont {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .abimg {
+        width: 80%;
+    }
+
+    .abouttext {
+        width: 100%;
+    }
+
+    .abouttext h2 {
+        width: 85%;
+    }
+
+    .abouttxt {
+        width: 85%;
+    }
+
+    #songs {
+        padding-bottom: 3rem;
+    }
+
+    .songcont {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 3rem;
+    }
+
+    .songimg {
+        width: 80%;
+    }
+
+    .songtext {
+        width: 100%;
+    }
+
+    #disc {
+        height: 260px;
+    }
+
+    #micro {
+        width: 210px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    footer span {
+        font-size: 2ch;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .icons {
+        font-size: 2ch;
+    }
+
+    .bigtext {
+        font-size: 10ch;
+    }
+
+    .bigtext-a {
+        left: -27px;
+    }
+
+    .bigtext-s {
+        right: -23px;
+    }
+
+
+}
+
+.ani {
+    transform: translateX(80px);
+    opacity: 0;
+}

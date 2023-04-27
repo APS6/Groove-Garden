@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Groove Garden</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=McLaren&family=Montserrat&family=Oxygen&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/674a493f30.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <span class="brand">GROOVE</span>
+    <nav>
+      <ul class="navlinks">
+        <li><a href="index.html" class="act">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="songs.html">Songs</a></li>
+        <button class="btn-1">Book a show?</button>
+      </ul>
+    </nav>
+    <div class="burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+  </div>
+    <section id="home" class="bg">
+      <div class="hero">
+        <div class="heroleft">
+          <img src="img/drumsets.png" alt="drumsets" />
+        </div>
+        <div class="heroright">
+          <h1><span>Groove</span><br /><span class="mar">Garden</span></h1>
+        </div>
+      </div>
+      <i id="arrow" class="fa-solid fa-angles-down"></i>
+    </section>
+    <section id="about" class="bg">
+      <div class="aboutcont">
+        <div class="abimg"><img src="img/band.webp" alt="band" /></div>
+        <div class="abouttext">
+          <h2 class="ani">About The Band</h2>
+          <div class="abouttxt">
+            <p class="ani">
+              Welcome to Groove Garden, a music project that blends funk, soul,
+              and R&B to create a unique and vibrant sound. Our high-energy
+              performances and catchy melodies are inspired by classic funk and
+              soul artists like James Brown and Aretha Franklin, as well as
+              contemporary acts like Bruno Mars and Anderson .Paak. Join us on
+              the dance floor and let the music move you!
+            </p>
+            <button class="btn-2 ani">Know More</button>
+          </div>
+        </div>
+      </div>
+      <div class="bigtext bigtext-a">ABOUT</div>
+    </section>
+    <section id="songs" class="bg">
+      <div class="songcont">
+        <div class="songimg">
+          <img src="img/song disc.png" alt="disc" id="disc" /><img
+            src="img/microphone.jpg"
+            alt="microphone"
+            id="micro"/>
+        </div>
+        <div class="songtext">
+          <h2>Tune in to our songs</h2>
+          <div class="songtxt">
+            <p>
+              Listen to our latest tracks and get ready to dance! Our music is a
+              fusion of funk, soul, and R&B, with catchy melodies and
+              high-energy beats that will keep you grooving all night long.
+              Check out our songs page for a full list of our tracks, and be
+              sure to follow us on [insert social media platform] for updates on
+              new releases.
+            </p>
+            <button class="btn-2">Browse Albums</button>
+          </div>
+        </div>
+      </div>
+      <div class="bigtext bigtext-s">SONGS</div>
+    </section>
+    <footer>
+        <span>Copyright © Groove Garden by APS</span>
+        <div class="icons"><i class="fa-brands fa-spotify"></i> <i class="fa-brands fa-instagram"></i> <i class="fa-brands fa-youtube"></i> <i class="fa-solid fa-music"></i></div>
+      </footer>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+      <script src="app.js"></script>
+  </body>
+</html>
