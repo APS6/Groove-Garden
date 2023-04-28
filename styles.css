@@ -59,9 +59,11 @@ nav {
 .navlinks li a {
     color: white;
 }
+
 .navlinks li a:hover {
     color: rgb(184, 173, 173)
 }
+
 .burger {
     display: none;
 }
@@ -87,9 +89,11 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-size: 1.5ch;
 }
-.btn-1:hover{
+
+.btn-1:hover {
     background-color: #5020b9;
 }
+
 .bg {
     background-color: var(--bg);
 }
@@ -199,9 +203,10 @@ h2 {
 
 }
 
-button{
+button {
     cursor: pointer;
 }
+
 .btn-2 {
     align-self: flex-start;
     border-radius: 10px;
@@ -216,7 +221,7 @@ button{
 
 .btn-2:hover {
     background-color: #626267;
-    scale:.94 !important;
+    scale: .94 !important;
     color: #fff;
 }
 
@@ -415,16 +420,16 @@ footer span {
     isolation: isolate;
     overflow: hidden;
     position: relative;
+    align-items: center;
 }
 
-.team h2 {
-    margin-left: 250px;
-}
 
 .cards {
     align-self: center;
     display: flex;
     gap: 5rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
@@ -489,6 +494,7 @@ h3 {
 .s img {
     width: 300px;
     height: 300px;
+    border-radius: 10px;
 }
 
 .sc {
@@ -516,11 +522,12 @@ h4 {
     display: flex;
     gap: 30px;
 }
-.icons i:hover{
+
+.icons i:hover {
     color: #b8b8bb;
 }
 
-@media (max-width:960px) {
+@media (max-width:900px) {
     .hero {
         gap: 3rem;
     }
@@ -571,6 +578,46 @@ h4 {
 
     .bigtext {
         font-size: 20ch;
+    }
+
+    .img-1 {
+        width: 620px;
+        margin-left: 25px;
+    }
+
+    .img-1 img {
+        height: 340px;
+        object-fit: cover;
+    }
+
+    .tgg-ct {
+        margin-right: 15px;
+    }
+
+    .storyp1 {
+        gap: 1rem;
+        margin-top: 3rem;
+    }
+
+    .img-2 {
+        width: 360px;
+        height: 300px;
+        margin-left: 15px;
+        object-fit: cover;
+    }
+
+    .storyp1 p {
+        width: 50%;
+    }
+
+    .img-3 {
+        margin-left: 290px;
+        margin-top: 4px;
+        width: 310px;
+        height: 260px;
+    }
+    .s{
+        width: 90%;
     }
 }
 
@@ -699,7 +746,65 @@ h4 {
         right: -23px;
     }
 
+    .tgg{
+        padding-top: 15vh;
+        gap: 3rem;
+        flex-direction: column-reverse;
+    }
+    .img-1{
+        margin: 0;
+        width: 90%;
+        height: auto;
+    }
+    .img-1 img{
+        height: auto;
+    }
+    .tgg-ct{
+        width: 90%;
+        margin: 0;
+    }
+    .tgg-ct p {
+        padding-top: 1rem;
+    }
 
+    .story h2{
+        width: 90%;
+    }
+    .storyp1 {
+        gap: 3rem;
+        margin-top: 1rem;
+        flex-direction: column-reverse;
+    }
+    .img-3{
+        display: none;
+    }
+    .img-2{
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+    .storyp1 p{
+        width: 90%;
+    }
+    .team{
+        padding-bottom: 3rem;
+    }
+
+    .songs-sec{
+        padding-top: 6rem;
+    padding-bottom: 3rem;
+    }
+    .s{
+        flex-direction: column;
+        align-items: center;
+    }
+    .s img {
+        width: auto;
+        height: auto;
+    }
+    .sc{
+        gap: 10px;
+    }
 }
 
 .ani {
