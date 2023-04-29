@@ -32,7 +32,7 @@ a {
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 1000;
     height: 10vh;
 }
 
@@ -45,6 +45,7 @@ nav {
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
     letter-spacing: 3px;
+    color: white;
 }
 
 .navlinks {
@@ -96,6 +97,46 @@ nav {
 
 .bg {
     background-color: var(--bg);
+}
+
+.intro {
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.slider {
+    background: var(--bg);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+    z-index: 1002;
+}
+
+.intro-text {
+    color: rgb(233, 233, 233);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 5rem;
+}
+
+.hide {
+    background: black;
+    overflow: hidden;
+}
+
+.hide span {
+    transform: translateY(100%);
+    display: inline-block;
 }
 
 #home {
@@ -355,6 +396,7 @@ footer span {
     z-index: 5;
     margin-right: 100px;
     width: 90%;
+    transform-origin: right;
 }
 
 .bigtext-b {
@@ -404,7 +446,7 @@ footer span {
 }
 
 .storyp1 p {
-    width: 30%;
+    width: 35%;
 }
 
 .bigtext-os {
@@ -616,7 +658,8 @@ h4 {
         width: 310px;
         height: 260px;
     }
-    .s{
+
+    .s {
         width: 90%;
     }
 }
@@ -629,7 +672,7 @@ h4 {
     nav {
         position: absolute;
         right: 0;
-        top: 10vh;
+        top: 0vh;
         height: 100vh;
         background-color: var(--bg);
         width: 50vw;
@@ -746,63 +789,77 @@ h4 {
         right: -23px;
     }
 
-    .tgg{
+    .tgg {
         padding-top: 15vh;
         gap: 3rem;
         flex-direction: column-reverse;
     }
-    .img-1{
+
+    .img-1 {
         margin: 0;
         width: 90%;
         height: auto;
     }
-    .img-1 img{
+
+    .img-1 img {
         height: auto;
+        border-radius: 5px;
     }
-    .tgg-ct{
+
+    .tgg-ct {
         width: 90%;
         margin: 0;
     }
+
     .tgg-ct p {
         padding-top: 1rem;
     }
 
-    .story h2{
+    .story h2 {
         width: 90%;
     }
+
     .storyp1 {
         gap: 3rem;
         margin-top: 1rem;
         flex-direction: column-reverse;
     }
-    .img-3{
+
+    .img-3 {
         display: none;
     }
-    .img-2{
+
+    .img-2 {
         width: 90%;
         height: auto;
         margin: 0;
+        border-radius: 5px;
     }
-    .storyp1 p{
+
+    .storyp1 p {
         width: 90%;
     }
-    .team{
+
+    .team {
         padding-bottom: 3rem;
     }
 
-    .songs-sec{
+    .songs-sec {
         padding-top: 6rem;
-    padding-bottom: 3rem;
+        padding-bottom: 3rem;
     }
-    .s{
+
+    .s {
         flex-direction: column;
         align-items: center;
     }
+
     .s img {
         width: auto;
         height: auto;
     }
-    .sc{
+
+    .sc {
         gap: 10px;
     }
 }
