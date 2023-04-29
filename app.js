@@ -12,10 +12,10 @@ tl.to(".text", { y: "0%", duration: 1, stagger: 0.25 });
 tl.to(".slider", { y: "-100%", duration: 1.5, delay: 0.5 });
 tl.to(".intro", { y: "-100%", duration: 1 }, "-=1");
 tl.fromTo('h1', 0.5, { opacity: 0, x: 30 }, { opacity: 1, x: 0 });
-tl.fromTo('.navlinks', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 });
-tl.fromTo('.btn-1', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, "-=.5");
-tl.fromTo('.brand', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, "-=.5");
-tl.fromTo('.burger', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, "-=.3");
+tl.fromTo('.navlinksa', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 });
+tl.fromTo('.btn-1a', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, "-=.5");
+tl.fromTo('.branda', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, "-=.5");
+tl.fromTo('.burgera', 0.5, { opacity: 0, x: 20 }, { opacity: 1, x: 0 }, "-=.3");
 tl.fromTo('#arrow', 0.5, { opacity: 0, y: -30 }, { opacity: 1, y: 0 });
 
 
