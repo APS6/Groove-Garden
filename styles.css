@@ -195,7 +195,7 @@ h1 {
 
 #about {
     display: flex;
-    min-height: 100vh;
+    padding-block: 5rem;
     justify-content: center;
     position: relative;
     overflow: hidden;
@@ -268,7 +268,7 @@ button {
 
 p {
     font-size: 2ch;
-    line-height: 25px;
+    line-height: 1.5;
     font-family: 'Oxygen', sans-serif;
 }
 
@@ -711,10 +711,6 @@ h4 {
         font-size: 6ch;
     }
 
-    #about {
-        padding-bottom: 3rem;
-    }
-
     .aboutcont {
         flex-direction: column-reverse;
         align-items: center;
@@ -864,6 +860,11 @@ h4 {
     }
 }
 
+@media (max-width: 450px){
+    .intro-text{
+        font-size: 3rem;
+    }
+}
 .ani {
     transform: translateX(80px);
     opacity: 0;
